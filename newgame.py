@@ -25,6 +25,7 @@ def GAME():
     print()
     #game logic
     w=False
+    winner = ''
     while True:
         t1.x(b,stk)
         count+=1
@@ -33,15 +34,19 @@ def GAME():
         o=p2+'  Wins'
         if b[1]==b[2]==b[3]=='X':
             print(a)
+            winner = 'X'
             w='T'
         elif b[4]==b[5]==b[6]=='X':
             print(a)
+            winner = 'X'
             w='T'
         elif b[7]==b[8]==b[9]=='X':
             print(a)
+            winner = 'X'
             w='T'
         elif b[1]==b[4]==b[7]=='X':
             print(a)
+            winner = 'X'
             w='T'
         elif b[2]==b[5]==b[8]=='X':
             print(a)
